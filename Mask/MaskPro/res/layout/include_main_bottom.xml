@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/item_hr_color" />
+
+    <RadioGroup
+        android:id="@+id/include_main_bottom_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_main_bottom_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/include_main_bottom_tool1"
+            style="@style/MyRadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_list"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_tab_main1"
+            android:text="@string/include_main_bottom_tool1" />
+
+        <RadioButton
+            android:id="@+id/include_main_bottom_tool2"
+            style="@style/MyRadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_list"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/radio_tab_main2"
+            android:text="@string/include_main_bottom_tool2" />
+
+
+        <RadioButton
+            android:id="@+id/include_main_bottom_tool3"
+            style="@style/MyRadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_list"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/radio_tab_main3"
+            android:text="@string/include_main_bottom_tool3" />
+
+        <RadioButton
+            android:id="@+id/include_main_bottom_tool4"
+            style="@style/MyRadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_list"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/radio_tab_main4"
+            android:text="@string/include_main_bottom_tool4" />
+    </RadioGroup>
+
+</LinearLayout>

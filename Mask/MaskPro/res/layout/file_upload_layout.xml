@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/top_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+            <!-- top_bar -->
+            <include layout="@layout/personal_center_top_bar" />
+     </LinearLayout>
+     
+    <FrameLayout 
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+    
+          <!-- 显示正在上传的视频信息 -->
+      <RelativeLayout
+        android:id="@+id/the_video_info"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#33cccccc"
+     
+        >
+         <ImageView
+             android:id="@+id/video_img"
+             android:layout_width="100dp"
+             android:layout_height="75dp"
+             android:layout_marginTop="7dp"
+             android:layout_marginLeft="10dp"
+             
+             />
+         <!-- 修改进度条的样式 -->
+         <ProgressBar
+            android:id="@+id/upload_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/video_img"
+            android:max="100"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+    		android:visibility="gone"
+             />
+         <TextView 
+             android:id="@+id/progress_tip_textview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="5dp"
+             android:textSize="12sp"
+             android:layout_below="@+id/upload_progressBar"
+             android:visibility="gone"
+             />
+
+         <TextView
+             android:id="@+id/video_name"
+             style="@style/TextH1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/video_img"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="25dp"
+             android:layout_toRightOf="@+id/video_img"
+             android:textColor="@color/text_color_h1" 
+             />
+		
+      </RelativeLayout>    
+          
+        
+        
+      <!-- 标签栏,显示标签栏时需要覆盖 -->
+    <RelativeLayout
+        android:id="@+id/want_to_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc999999"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_gridview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="标签:"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_alignTop="@+id/clissify_gridview"
+            android:text="分类:"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/label_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="4dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="auto_fit"
+            android:listSelector="#00000000"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" 
+            android:layout_weight="1"
+	        android:dividerHeight="1dp">
+        </GridView>
+
+        <GridView
+            android:id="@+id/clissify_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_gridview"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:horizontalSpacing="3dp"
+            android:numColumns="auto_fit"
+            android:listSelector="#00000000"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+        <Button
+            android:id="@+id/select_label_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/clissify_gridview"
+            android:textColor="#fff"
+            android:text="确定"
+            android:textSize="18sp"
+            android:clickable="false"
+            
+            />
+
+    </RelativeLayout>
+
+    </FrameLayout>
+	<RelativeLayout 
+	    android:id="@+id/blank_area"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/FrameLayout1"
+	    android:layout_marginBottom="50dp"
+	    android:orientation="vertical"
+	    android:clickable="true">
+
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:gravity="center"
+		    android:src="@drawable/gray_logo" />
+	    
+	</RelativeLayout>
+  
+   
+      
+    <!-- 点击分享图片的按钮 -->
+        <RelativeLayout 
+        android:id="@+id/find_Video"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_top_bsr"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="点击分享视频" 
+            android:textColor="#fff"/>
+    </RelativeLayout>    
+
+</RelativeLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/main_list"
+        style="@style/ContentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <LinearLayout
+            android:id="@+id/bg_logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_logo"
+                />
+            <TextView 
+                android:id="@+id/text_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有话题贴，快去看看>"
+                android:clickable="true"
+                android:textColor="@color/color_bottom_text_color"
+                />
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hall_typegroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/hall_type_radio1"
+        style="@style/LoginRadioButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="全部" />
+
+    <RadioButton
+        android:id="@+id/hall_type_radio2"
+        style="@style/LoginRadioButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="分类1" />
+
+    <RadioButton
+        android:id="@+id/hall_type_radio3"
+        style="@style/LoginRadioButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="分类2" />
+
+    <RadioButton
+        android:id="@+id/hall_type_radio4"
+        style="@style/LoginRadioButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="分类3" />
+</RadioGroup>

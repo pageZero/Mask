@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    
+    <LinearLayout
+        android:id="@+id/top_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+            <!-- top_bar -->
+            <include layout="@layout/personal_center_top_bar" />
+     </LinearLayout>
+     
+     <RelativeLayout
+         android:id="@+id/change_head"
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:layout_marginTop="50dp"
+         android:clickable="true"
+         android:background="@drawable/personal_center_selector"
+          >
+		<com.myview.CircularImage
+                android:id="@+id/head"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/iv_background_me"
+                 />
+
+		<TextView
+		    android:id="@+id/tip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="55dp"
+		    android:layout_centerInParent="true"
+		    android:text="点击修改头像" />
+     </RelativeLayout>
+     
+     <RelativeLayout
+         android:id="@+id/relativeLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_below="@+id/change_head"
+          >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_marginLeft="15dp"
+             android:gravity="center_vertical"
+             android:textStyle="bold"
+             android:text="用户名" />
+
+         <TextView
+             android:id="@+id/user_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textView1"
+             android:layout_alignBottom="@+id/textView1"
+             android:layout_centerHorizontal="true"
+              />
+     </RelativeLayout>
+     	
+     <RelativeLayout 
+         android:id="@+id/relativeLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:layout_below="@+id/relativeLayout1"
+          >
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:textStyle="bold"
+             android:text="昵称" />
+
+         <!-- android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp" -->
+         <EditText
+             android:id="@+id/nick"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+             android:layout_centerHorizontal="true"
+             android:layout_alignBaseline="@+id/textView2"
+             android:layout_alignBottom="@+id/textView2"
+             android:ems="10"
+             android:inputType="textPersonName"
+             android:textSize="16sp"
+             android:background="@drawable/edit_view_shape" />
+             
+        
+     </RelativeLayout>
+    
+     <RelativeLayout 
+         android:id="@+id/change_pwd_layout"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_below="@+id/relativeLayout2"
+         android:clickable="true"
+         android:background="@drawable/personal_center_selector">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:textStyle="bold"
+             android:text="密码" />
+
+         <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="55dp"
+		    android:layout_centerInParent="true"
+		    android:text="点击修改密码" />
+     </RelativeLayout>
+</RelativeLayout>

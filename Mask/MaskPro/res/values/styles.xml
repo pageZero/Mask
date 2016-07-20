@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="android:windowBackground">@color/windows_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:homeAsUpIndicator">@drawable/back</item>
+	</style>
+	<!-- 自定义红色标题样式 -->
+    <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue</item>
+    </style>
+    <!-- 红色按钮样式 -->
+    <style name="BlueButtonStyle">
+        <item name="android:background">@drawable/background_button_blue</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- 红色按钮样式 -->
+    <style name="RedButtonStyle">
+        <item name="android:background">@drawable/background_button_red</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+	<!-- 底部导航栏RadoiButton的样式 -->
+    <style name="MyRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:textColor">@drawable/radiobutton_textcolor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 纯文本粉红色主题RadoiButton的样式 -->
+    <style name="LoginRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:textColor">@drawable/radiobutton_textcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:background">@drawable/background_login_tab</item>
+    </style>
+    <!-- 透明的对话框样式 -->
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!-- 透明的进度条对话框样式 -->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <!-- 一级标题的样式 -->
+    <style name="TextH1">
+        <item name="android:textColor">@color/text_color_h1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <!-- 二级标题的样式 -->
+    <style name="TextH2">
+        <item name="android:textColor">@color/text_color_h2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <!-- 三级标题的样式 -->
+    <style name="TextH3">
+        <item name="android:textColor">@color/text_color_h3</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+	<!-- 帖子列表得样式 -->
+	<style name="ContentList">
+	    <item name="android:cacheColorHint">@null</item>
+	    <item name="android:listSelector">@null</item>
+	    <item name="android:footerDividersEnabled">false</item>
+	    <item name="android:headerDividersEnabled">false</item>
+	    <item name="android:fastScrollEnabled">false</item>
+	    <item name="android:smoothScrollbar">true</item>
+	    <item name="android:fadingEdge">none</item>
+	</style>
+	<!-- 资源列表样式 -->
+	<style name="UploadResourceList">
+	    <item name="android:cacheColorHint">@null</item>
+	    <item name="android:listSelector">@null</item>
+	    <item name="android:footerDividersEnabled">false</item>
+	    <item name="android:headerDividersEnabled">false</item>
+	    <item name="android:fastScrollEnabled">false</item>
+	    <item name="android:smoothScrollbar">true</item>
+	    <item name="android:fadingEdge">none</item>
+	</style>
+</resources>

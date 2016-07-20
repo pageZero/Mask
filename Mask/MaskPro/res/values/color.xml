@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_hr_color">#D1D1D4</color>
+    <color name="blue">#fd7576</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_title_bg">#33B5E5</color>
+    <color name="text_hint_color">#646464</color>
+    <color name="translucent_bg">#91000000</color>
+    <color name="transparent_bg">#00FFFFFF</color>
+    <color name="windows_bg">#F0F0F0</color>
+    <color name="text_color_h1">#262626</color>
+    <color name="text_color_h2">#5D5D5D</color>
+    <color name="text_color_h3">#5D5D5D</color>
+    
+    <color name="color_top_bsr">#fd7576</color>
+    <color name="color_bottom_text_color">#fd7576</color>
+    <color name="color_backgdround_gray">#f0f0f0</color>
+    
+</resources>

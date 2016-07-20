@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mask"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 查看LOG日志 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用打开网络套接口 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取手机信息 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 唤醒屏幕 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取外部存储 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许应用访问网络上的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看WIFI状态 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 修改设置信息 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--  -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!--  -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 显示在其他应用之上 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!--  -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="cn.bmob.permission.push" />
+    <!-- 添加自定义的权限 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bigger_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.settings.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.settings.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.settings.SettingsCenterActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.classify.ClassifyActivity"
+            android:label="@string/clissify_activity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.android.recommend.RecommendActivity"
+            android:label="@string/recomment"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.android.settings.PersonalData"
+            android:label="@string/personal_data"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.android.settings.MyCollection"
+            android:label="@string/my_collection"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.settings.MyMessage"
+            android:label="@string/my_message"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.settings.MyUpload"
+            android:label="@string/my_upload"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.settings.AboutUs"
+            android:label="@string/about_us"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.mask.FileUpload"
+            android:label="@string/file_upload"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.classify.EachClassifyActivity"
+            android:label="@string/_"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="search.SearchActivity"
+            android:label="@string/search"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.topic.TopicActivity"
+            android:label="话题" >
+        </activity>
+        <activity
+            android:name="com.android.topic.PublishActivity"
+            android:label="发表帖子" >
+        </activity>
+        <activity
+            android:name="com.android.topic.PublishCommentActivity"
+            android:label="高级评论" >
+        </activity>
+        <activity
+            android:name="com.android.topic.CommentActivity"
+            android:label="评论列表" >
+        </activity>
+        <activity
+            android:name="com.android.topic.MyContentActivity"
+            android:label="帖子列表" >
+        </activity>
+        <activity
+            android:name="com.android.recommend.aCoursePublishCommentActivity"
+            android:label="教程高级评论" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <ImageView 
+            android:id="@+id/return_right"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/return_right"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <com.myview.CircularImage
+            android:id="@+id/id_img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bigger_logo" />
+
+        <TextView
+            android:id="@+id/id_login_or_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_img1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="登陆/注册"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.07"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+       >
+
+        <ImageView
+            android:id="@+id/id_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/person" 
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_img2"
+            android:text="个人资料"
+            style="@style/TextH2"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/mytopic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.07"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+       >
+
+        <ImageView
+            android:id="@+id/id_img8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/topic" 
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_img8"
+            android:text="我的帖子"
+            style="@style/TextH2"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/my_collection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+        >
+
+        <ImageView
+            android:id="@+id/id_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/collect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_img3"
+            android:text="我的收藏"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/my_upload"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+        >
+
+        <ImageView
+            android:id="@+id/id_img33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/upload1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/id_img33"
+            android:text="我的上传"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/id_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/id_img4"
+            android:text="消息通知"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+       >
+
+        <ImageView
+            android:id="@+id/id_img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/connect_us" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/id_img5"
+            android:text="联系我们"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/software_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+        >
+
+        <ImageView
+            android:id="@+id/id_img6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/update" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_img6"
+            android:text="软件更新"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+ 
+    </RelativeLayout>
+    
+     <RelativeLayout
+         android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/personal_center_selector"
+     >
+
+        <ImageView
+            android:id="@+id/id_img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_img7"
+            android:text="退出登录"
+            style="@style/TextH2"
+            android:textSize="18sp" />
+ 
+    </RelativeLayout>
+</LinearLayout>
+
+</RelativeLayout>

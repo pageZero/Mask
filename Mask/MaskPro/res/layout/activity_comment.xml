@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/comment_list"
+        style="@style/ContentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/comment_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_btn_add" />
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入评论" />
+
+        <Button
+            android:id="@+id/comment_commit"
+            style="@style/BlueButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0"
+            android:text="评论" />
+    </LinearLayout>
+
+</RelativeLayout>

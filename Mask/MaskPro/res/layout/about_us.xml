@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_backgdround_gray" >
+
+     <include layout="@layout/top_bar_about_us" />
+    
+   <com.myview.CircularImage
+            android:id="@+id/id_img_masklogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/bigger_logo" />
+   
+        <LinearLayout
+            android:id="@+id/developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/id_img_masklogo"
+            android:layout_alignTop="@id/id_img_masklogo"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aboutours_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_centerHorizontal="true"
+                android:text="开发方：               "
+                android:textSize="20dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/aboutours_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云南大学   软件学院"
+                android:textSize="17dp"
+                android:textColor="#000"  />
+
+           
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/contact_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/developer"
+            android:layout_alignTop="@id/developer"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aboutours_textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"           
+                android:layout_centerHorizontal="true"
+                android:text="联系方式：  "
+                android:textSize="20dp" 
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/aboutours_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email：CQM913@139.com"
+                android:textSize="15dp"
+                android:textColor="#000"  />
+
+        </LinearLayout>
+
+</RelativeLayout>

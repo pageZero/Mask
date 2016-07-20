@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0"
+    >
+    
+    <LinearLayout
+        android:id="@+id/top_bar_my_collections"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+            <!-- top_bar -->
+            <include layout="@layout/personal_center_top_bar" />
+     </LinearLayout>
+     <FrameLayout 
+        android:id="@+id/fl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        
+         <LinearLayout
+            android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!-- listView android:id="@+id/id_listview_my_collection"-->
+
+	<com.handmark.pulltorefresh.library.PullToRefreshListView
+	    android:id="@+id/listView_my_collections"
+	    style="@style/UploadResourceList"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" />
+         
+      </LinearLayout> 
+        <LinearLayout
+            android:id="@+id/bg_logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_logo"
+                />
+            <TextView 
+                android:id="@+id/text_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有收藏，快去看看>"
+                android:clickable="true"
+                android:textColor="@color/color_bottom_text_color"
+                />
+        </LinearLayout>
+        
+     </FrameLayout>
+      
+
+</RelativeLayout>

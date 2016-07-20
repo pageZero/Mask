@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+	    android:id="@+id/publish_menu_pub"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="发表"/>
+</menu>

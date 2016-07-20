@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff" >
+    
+	<LinearLayout
+        android:id="@+id/top_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+            <!-- top_bar -->
+            <include layout="@layout/personal_center_top_bar" />
+     </LinearLayout>
+     
+      <LinearLayout
+        android:id="@+id/listView_my_message"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+        <!-- listView -->
+
+          <ListView
+              android:id="@+id/id_listview_my_message"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </ListView>
+         
+      </LinearLayout> 
+</RelativeLayout>
