@@ -96,6 +96,7 @@ OnInfoListener, OnBufferingUpdateListener {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE); //取消默认top bar
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.course); //绑定当前layout为activity_main.xml
 		Vitamio.isInitialized(getApplicationContext());
 		mContext = this;

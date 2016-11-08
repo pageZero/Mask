@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="@color/color_backgdround_gray">
-    
-     <LinearLayout
-        android:id="@+id/top_bar_classify"
-        android:layout_width="match_parent"
+    android:orientation="vertical"
+     >
+
+    <!-- top_bar -->
+    <include
+        layout="@layout/top_bar_classify" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true" >
-            
-            <!-- top_bar -->        
-            <include layout="@layout/top_bar_classify"/>
-     </LinearLayout>
-	
-     <LinearLayout 
-        android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="50dp"
-         >
-         <GridView 
-         android:id="@+id/gridview"
-         android:layout_width="fill_parent"  
-    	android:layout_height="fill_parent"
-    	android:numColumns="2"
-   	 	android:verticalSpacing="10dp"
-    	android:horizontalSpacing="10dp"
-    	android:stretchMode="columnWidth"
-    	android:gravity="center"
-    	
-         >
-             
-         </GridView>
-     </LinearLayout>
-     
-</RelativeLayout>
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

@@ -2,28 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#f0f0f0"
+    android:background="@color/color_backgdround_gray"
     android:orientation="vertical" >
-    
+
+    <include layout="@layout/top_bar_course" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        layout="@layout/videobuffer" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:orientation="vertical" >
 
-        <include layout="@layout/top_bar_course" />
-
-        <include 
-       android:layout_width="match_parent"
-       android:layout_height="210dp"
-       layout="@layout/videobuffer"/>
-
         <TextView
             android:id="@+id/id_tv_courseName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#ffffff"
             android:text="视频名字"
             android:textSize="18dp" />
 
@@ -32,13 +31,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:background="#ffffff"
-            android:baselineAligned="false" >
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1" >
+                android:layout_weight="2" >
 
                 <TextView
                     android:id="@+id/id_tv_courseViewcount"
@@ -72,14 +71,14 @@
                     android:layout_toRightOf="@id/id_img_courseCollectcount"
                     android:text="收藏" />
             </RelativeLayout>
-   
+
             <RelativeLayout
                 android:id="@+id/comment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="2" >
 
-                   <ImageView
+                <ImageView
                     android:id="@+id/comment_img"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,6 +86,7 @@
                     android:layout_alignParentTop="true"
                     android:contentDescription="评论"
                     android:src="@drawable/comment" />
+
                 <TextView
                     android:id="@+id/comment1"
                     android:layout_width="wrap_content"
@@ -94,13 +94,12 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/comment_img"
                     android:text="评论" />
-
             </RelativeLayout>
-            
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1" >
+                android:layout_weight="2" >
 
                 <ImageView
                     android:id="@+id/id_img_courseReport"
@@ -121,17 +120,12 @@
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
-     
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="10dp"
-        android:orientation="vertical" >
-   </LinearLayout>   
-      <com.handmark.pulltorefresh.library.PullToRefreshListView
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/comment_list"
         style="@style/ContentList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-    
+        android:layout_height="match_parent" />
+
 </LinearLayout>

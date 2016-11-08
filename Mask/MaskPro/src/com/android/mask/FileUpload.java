@@ -78,6 +78,7 @@ public class FileUpload extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.file_upload_layout);
 		init();
 		setListener();

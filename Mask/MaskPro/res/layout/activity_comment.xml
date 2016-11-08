@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@color/color_backgdround_gray"
+     >
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/comment_list"
@@ -33,7 +35,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="请输入评论" />
+            android:padding="5dp"
+            android:hint="请输入评论"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/edit_view_shape" />
 
         <Button
             android:id="@+id/comment_commit"
@@ -41,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_weight="0"
+            android:padding="5dp"
             android:text="评论" />
     </LinearLayout>
 

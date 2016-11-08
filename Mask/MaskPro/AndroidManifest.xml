@@ -60,7 +60,8 @@
         <activity
             android:name=".MainActivity1"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -134,27 +135,33 @@
         </activity>
         <activity
             android:name="com.android.topic.TopicActivity"
-            android:label="话题" >
+            android:label="话题"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="com.android.topic.PublishActivity"
-            android:label="发表帖子" >
+            android:label="发表帖子"
+            >
         </activity>
         <activity
             android:name="com.android.topic.PublishCommentActivity"
-            android:label="高级评论" >
+            android:label="高级评论"
+             >
         </activity>
         <activity
             android:name="com.android.topic.CommentActivity"
-            android:label="评论列表" >
+            android:label="评论列表"
+             >
         </activity>
         <activity
             android:name="com.android.topic.MyContentActivity"
-            android:label="帖子列表" >
+            android:label="帖子列表"
+             >
         </activity>
         <activity
             android:name="com.android.recommend.aCoursePublishCommentActivity"
-            android:label="教程高级评论" >
+            android:label="教程高级评论" 
+            >
         </activity>
     </application>
 

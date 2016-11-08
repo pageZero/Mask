@@ -23,6 +23,7 @@ public class RegisterActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.register_layout);
 
 		email = (EditText) findViewById(R.id.email);

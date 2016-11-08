@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/color_backgdround_gray" >
     
      <include layout="@layout/top_bar_course" /> 
  
@@ -10,6 +11,7 @@
         android:id="@+id/main_list3"
         style="@style/ContentList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+         />
    
 </LinearLayout>

@@ -35,6 +35,7 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.login_or_register);
 
 		Addresss = (EditText) findViewById(R.id.accountEt_login);

@@ -36,6 +36,10 @@ public class MainActivity1 extends FragmentActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Bmob.initialize(this,"318faa2775adff8ebaa87f7528fe9248");
+		
+		// 或者getWindow().setBackgroundDrawable(null);
+		//移除
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.activity_main1); //绑定当前layout为activity_main.xml
 	    initview();
 	    setListeners();

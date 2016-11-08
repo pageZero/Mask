@@ -43,6 +43,7 @@ public class SettingsCenterActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.settings_center_layout);
 		init();// 初始化需要用到的textView
 		// 从缓存中获取当前登录的用户

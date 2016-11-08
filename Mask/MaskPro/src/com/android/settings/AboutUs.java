@@ -19,6 +19,7 @@ public class AboutUs extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE); //È¡ÏûÄ¬ÈÏtop bar
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.about_us); 
 		
 		mContext = this;

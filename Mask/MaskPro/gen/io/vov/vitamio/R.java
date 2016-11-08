@@ -28,11 +28,11 @@ public final class R {
 		public static final int scrubber_track_holo_dark = 0x7f02007e;
 	}
 	public static final class id {
-		public static final int mediacontroller_file_name = 0x7f090096;
-		public static final int mediacontroller_play_pause = 0x7f090092;
-		public static final int mediacontroller_seekbar = 0x7f090095;
-		public static final int mediacontroller_time_current = 0x7f090093;
-		public static final int mediacontroller_time_total = 0x7f090094;
+		public static final int mediacontroller_file_name = 0x7f090095;
+		public static final int mediacontroller_play_pause = 0x7f090091;
+		public static final int mediacontroller_seekbar = 0x7f090094;
+		public static final int mediacontroller_time_current = 0x7f090092;
+		public static final int mediacontroller_time_total = 0x7f090093;
 	}
 	public static final class layout {
 		public static final int mediacontroller = 0x7f03001c;

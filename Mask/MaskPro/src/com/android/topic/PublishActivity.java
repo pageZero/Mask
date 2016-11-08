@@ -77,6 +77,7 @@ public class PublishActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		getActionBar().setDisplayShowHomeEnabled(false);
 		getActionBar().setDisplayHomeAsUpEnabled(true);  
+		//getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.activity_publish);
 
 		initView(); // 初始化界面

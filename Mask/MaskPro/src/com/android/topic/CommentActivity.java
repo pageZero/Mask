@@ -76,6 +76,7 @@ public class CommentActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		getActionBar().setDisplayShowHomeEnabled(false);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 		setContentView(R.layout.activity_comment);
 		
 		//得到帖子内容
